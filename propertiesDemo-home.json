@@ -1,0 +1,22 @@
+{
+	"link": [
+		"./about.html",
+		"./contact.html"
+	],
+	"propertyCard": [
+		{
+			"image": "./properties/cherry-grove-images/Front.jpg",
+			"title": "First Property",
+			"location": "Knoxville, TN",
+			"description": "Single family house with 4 Rooms for rent",
+			"link": "./properties/cherry-grove.html"
+		},
+		{
+			"image": "./properties/cherry-grove-images/Front.jpg",
+			"title": "Second Property",
+			"location": "Knoxville, TN",
+			"description": "Single family house with 2 Rooms for rent",
+			"link": "./properties/cherry-grove.html"
+		}
+	]
+}
