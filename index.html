@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="track" content="8TGYQOuEB3cWFtObB" />
+    <title>Blunova Properties - Comfortable Rentals in Tennessee</title>
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.min.css" />
+    <script src="https://get.mavo.io/mavo.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary-color: #0066cc;
+        --secondary-color: #f8f8f8;
+        --text-color: #333;
+        --accent-color: #ff9900;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 1rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        --mv-property: link;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+      }
+
+      .hero {
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+
+      .hero-content {
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        /* --mv-property: title; */
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        /* --mv-property: description; */
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .propertyList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+        /* --mv-list: true; */
+        /* --mv-multiple: true; */
+        /* --mv-property: properties; */
+      }
+
+      .propertyCard {
+        /* --mv-list-item: true; */
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .propertyCard:hover {
+        transform: translateY(-5px);
+      }
+
+      .propertyImage {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        --mv-property: image;
+      }
+
+      .propertyDetails {
+        padding: 1rem;
+      }
+
+      .property-description {
+        --mv-property: description;
+      }
+
+      .property-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        --mv-property: title;
+      }
+
+      .property-location {
+        font-weight: 700;
+        color: var(--primary-color);
+        --mv-property: location;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+        --mv-property: link;
+      }
+
+      .cta-button:hover {
+        background-color: #e68a00;
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        --mv-property: footer;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .propertyList {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V0GW25P48Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-V0GW25P48Z");
+    </script>
+  </head>
+  <body
+    mv-plugins="tinymce importhtml"
+    mv-app="propertiesDemo-home"
+    mv-storage="https://github.com/hsingh23/properties-demo"
+    mv-bar="no-login"
+    autosave="3"
+    mv-upload-path="pictures"
+  >
+    <header>
+      <nav>
+        <div class="logo">Blunova Properties</div>
+        <ul class="nav-links">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content tinymce" property="sectionContent"></div>
+    </section>
+
+    <main>
+      <section id="properties">
+        <h2>Featured Properties</h2>
+
+        <div class="propertyList" mv-list>
+          <div class="propertyCard" mv-list-item property="propertyCard">
+            <img class="propertyImage" src="./properties/cherry-grove-images/Front.jpg" />
+            <div class="propertyDetails">
+              <h3 class="property-title">Cherry Grove</h3>
+              <p class="property-location">Knoxville, TN</p>
+              <p class="property-description">Single family house with 4 Rooms for rent</p>
+              <a href="./properties/cherry-grove.html" class="cta-button property-link">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
